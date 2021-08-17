@@ -35,14 +35,7 @@ app.use(cookieParser());
 // Controllers
 
 // Serve static assests, if in production
-if (process.env.NODE_ENV === "production") {
-    //set static folder
-    app.use(express.static("socialmediafrontend/build"));
-  
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "socialmediafrontend", "build", "index.html"));
-    });
-  }
+
 
 // bring in routes
 app.use('/', postRoutes);
