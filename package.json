@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix socialmediafrontend && npm run build --prefix socialmediafrontend"
+    "start": "node app.js"
+    
   },
   "author": "Anirban Banerjee",
   "license": "ISC",
