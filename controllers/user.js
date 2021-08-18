@@ -150,7 +150,6 @@ exports.removeFollower = (req, res) => {
                     error: err
                 });
             }
-            result.hashed_password = undefined;
             result.salt = undefined;
             res.json(result);
         });
